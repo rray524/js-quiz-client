@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 const ResultTable = () => {
     const [myData, setMyData] = useState([])
     useEffect(() => {
-        axios.get("http://localhost:8000/api/result")
+        axios.get("https://js-quiz-backend.onrender.com/api/result")
             .then((response) => setMyData(response.data))
             .catch((error) => console.log(error))
     }, []);

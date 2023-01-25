@@ -20,7 +20,7 @@ export const useFetchQuestion = () => {
             try {
 
                 // console.log(question);
-                const datas = await axios.get("http://localhost:8000/api/questions");
+                const datas = await axios.get("https://js-quiz-backend.onrender.com/api/questions");
                 // console.log(datas.data);
                 let question = datas?.data[0].questions;
                 let answers = datas?.data[0].answers;
